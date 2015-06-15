@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4F04F0C1B2D636900D0B53D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F04F0B1B2D636900D0B53D /* main.c */; };
-		A4F04F131B2D63F700D0B53D /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F04F121B2D63F700D0B53D /* network.c */; };
-		A4F04F161B2D642B00D0B53D /* gpu-miner.cl in Sources */ = {isa = PBXBuildFile; fileRef = A4F04F151B2D642B00D0B53D /* gpu-miner.cl */; };
+		A4DCDB341B2ECB94003EBB72 /* gpu-miner.cl in Sources */ = {isa = PBXBuildFile; fileRef = A4DCDB301B2ECB94003EBB72 /* gpu-miner.cl */; };
+		A4DCDB351B2ECB94003EBB72 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A4DCDB311B2ECB94003EBB72 /* main.c */; };
+		A4DCDB361B2ECB94003EBB72 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = A4DCDB321B2ECB94003EBB72 /* network.c */; };
 		A4F04F181B2D69FF00D0B53D /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F04F171B2D69FF00D0B53D /* libcurl.dylib */; };
 /* End PBXBuildFile section */
 
@@ -26,11 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A4DCDB301B2ECB94003EBB72 /* gpu-miner.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = "gpu-miner.cl"; sourceTree = SOURCE_ROOT; };
+		A4DCDB311B2ECB94003EBB72 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = SOURCE_ROOT; };
+		A4DCDB321B2ECB94003EBB72 /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = SOURCE_ROOT; };
+		A4DCDB331B2ECB94003EBB72 /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = SOURCE_ROOT; };
 		A4F04F081B2D636900D0B53D /* gpu-miner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gpu-miner"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4F04F0B1B2D636900D0B53D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		A4F04F121B2D63F700D0B53D /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
-		A4F04F141B2D640800D0B53D /* network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
-		A4F04F151B2D642B00D0B53D /* gpu-miner.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = "gpu-miner.cl"; sourceTree = "<group>"; };
 		A4F04F171B2D69FF00D0B53D /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -66,10 +66,10 @@
 		A4F04F0A1B2D636900D0B53D /* gpu-miner */ = {
 			isa = PBXGroup;
 			children = (
-				A4F04F141B2D640800D0B53D /* network.h */,
-				A4F04F121B2D63F700D0B53D /* network.c */,
-				A4F04F0B1B2D636900D0B53D /* main.c */,
-				A4F04F151B2D642B00D0B53D /* gpu-miner.cl */,
+				A4DCDB321B2ECB94003EBB72 /* network.c */,
+				A4DCDB331B2ECB94003EBB72 /* network.h */,
+				A4DCDB301B2ECB94003EBB72 /* gpu-miner.cl */,
+				A4DCDB311B2ECB94003EBB72 /* main.c */,
 			);
 			path = "gpu-miner";
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4F04F131B2D63F700D0B53D /* network.c in Sources */,
-				A4F04F161B2D642B00D0B53D /* gpu-miner.cl in Sources */,
-				A4F04F0C1B2D636900D0B53D /* main.c in Sources */,
+				A4DCDB361B2ECB94003EBB72 /* network.c in Sources */,
+				A4DCDB351B2ECB94003EBB72 /* main.c in Sources */,
+				A4DCDB341B2ECB94003EBB72 /* gpu-miner.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +249,7 @@
 				A4F04F111B2D636900D0B53D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

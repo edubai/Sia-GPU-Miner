@@ -274,7 +274,7 @@ int main(int argc, char *argv[]) {
     printf("Initializing...\n");
     fflush(stdout);
     FILE *fp;
-    const char fileName[] = "/Users/edubai/Desktop/gpu-miner/gpu-miner/gpu-miner.cl";
+    const char fileName[] = "./gpu-miner.cl";
     size_t source_size;
     char *source_str;
     fp = fopen(fileName, "r");
